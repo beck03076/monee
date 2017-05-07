@@ -26,23 +26,23 @@ Or install it yourself as:
 
 # 1. Set the conversion rates
 
-$ Monee::Money.conversion_rates('EUR', {
-  'USD'     => 1.11,
-  'Bitcoin' => 0.0047
-})
+    $ Monee::Money.conversion_rates('EUR', {
+      'USD'     => 1.11,
+      'Bitcoin' => 0.0047
+    })
 
 # 2. Start using as below,
 
-$ fifty_eur = Monee::Money.new(50, 'EUR')
-$ twenty_dollars = Monee::Money.new(20, 'USD')
-$ fifty_eur + twenty_dollars # => 68.02 EUR
+    $ fifty_eur = Monee::Money.new(50, 'EUR')
+    $ twenty_dollars = Monee::Money.new(20, 'USD')
+    $ fifty_eur + twenty_dollars # => 68.02 EUR
 
 ## How to run the test suite
 
 Use the following commands to run the test suites
 
-$ cd monee
-$ rspec
+    $ cd monee
+    $ rspec
 
 ## Tests Coverage(100%)
 
@@ -50,19 +50,19 @@ Once your run $ rspec then the commandline will generate the tests coverage unde
 
 Enter an URL that looks like below on your browser,
 
-$ file:///Users/beck/BECK/interview/monee/coverage/index.html#_AllFiles
+    $ file:///Users/beck/BECK/interview/monee/coverage/index.html#_AllFiles
 
 ## Steps to check LOC
 
 To check the lines of code in this repository, you can use this simple shell script by executing the following command,
 
-$ ./loc.sh
+    $ ./loc.sh
 
 ## Yard Documentation
 
 The entire code base is well documented following the yard coding comments conventions. To read the documentation of this rails app you can execute the following command,
 
-$ yard server
+    $ yard server
 
 and visit http://localhost:8808, to the yard documentation of this application.
 
