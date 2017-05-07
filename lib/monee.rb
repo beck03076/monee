@@ -10,5 +10,6 @@ require 'monee/error'
 require 'monee/money'
 require_relative '../lib/core_ext/numeric'
 
+# main namespace to avoid contradiction with existing gems
 module Monee
 end
