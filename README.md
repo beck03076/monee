@@ -6,6 +6,26 @@ This is a rubygem created with minimal features as required and engineered with 
 
 Following TDD practice, designed with few useful patterns, styled with rubocop style guide, documented with yard convention, lines of code analysis, 100% tests coverage and properly error handled rubygem project could be very useful to assess one's knowledge in build rubygems.
 
+## How to release the gem on rubygems.org
+
+1. Commit all your code and push to github
+
+2. git push with upstream flag, I did this,
+
+        git push --set-upstream monee master:master
+
+3. Remove these lines from monee.gemspec,
+
+          if spec.respond_to?(:metadata)
+            spec.metadata['allowed_push_host'] = ""
+          else
+            raise ""
+          end
+          
+4. Run this rake task from your gem path
+
+        $ bundle exec rake release
+        
 ## Installation
 
 Add this line to your application's Gemfile:
