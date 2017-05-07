@@ -6,7 +6,21 @@ This is a rubygem created with minimal features as required and engineered with 
 
 Following TDD practice, designed with few useful patterns, styled with rubocop style guide, documented with yard convention, lines of code analysis, 100% tests coverage and properly error handled rubygem project could be very useful to assess one's knowledge in build rubygems.
 
+## Installation
 
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'monee'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install monee
 
 ## Usage
 
@@ -76,22 +90,6 @@ This is really something to be proud about!
 
         $ bundle exec rake release
         
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'monee'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install monee
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
